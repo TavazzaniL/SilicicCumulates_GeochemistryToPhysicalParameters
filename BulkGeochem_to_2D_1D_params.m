@@ -1,6 +1,6 @@
 %% Script to go from XRF data distribuited across the intrusion to 1D and 2D 
 % distribution of fractionation degree, fraction of melt extracted and porosity of the silicic cumulate 
-% following the equations of Lee and Morton (2015)
+% following the equations of Lee and Morton (2015; http://dx.doi.org/10.1016/j.epsl.2014.10.040)
 
 % full theoretical background in Tavazzani et al. (submitted)
 % ver.1.2 
