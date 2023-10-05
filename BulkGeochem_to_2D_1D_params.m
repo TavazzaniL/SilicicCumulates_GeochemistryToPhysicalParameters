@@ -10,7 +10,7 @@ clear; clc; close all
 
 %%%%%%%%%%%%%%%%%%% Load XRF data and map information
 % Select directory
-cd /Users/ltavazzani/polybox/f_Writing/Revisions/Round_5_coauthors_LastEdits/Codes_data 
+cd /Users/ltavazzani/polybox/Codes_data 
 
 %Load .csv data for lat-long and chemical composition
 data=csvread('heatmap_VMP_prov_6.csv');
@@ -152,7 +152,7 @@ Line1=' (ppm)';%(wt%) %(ppm) %-
 
 % GridFit model
 %Select directory where gridfit.m it's stored
-cd /Users/ltavazzani/polybox/f_Writing/Revisions/Round_5_coauthors_LastEdits/Codes_data/gridfitdir
+cd /Users/ltavazzani/polybox/Codes_data/gridfitdir
 %Set coordinates for interpolation limit
 minX=8.12610036379948; maxX=8.22912732362391; minY=45.5869567640003; maxY=45.6755256278475; 
 dx=0.0005; dy=0.0005;
@@ -196,7 +196,7 @@ mapshow(S,'Color','k','Linewidth',2);
 mapshow(Ma,'FaceColor', [1 1 1], 'EdgeColor', [1 1 1]);
 c1 = colorbar; c1.Location='eastoutside'; 
 c1.Label.String = 'F_g x 100 (relative to silicic parent)';
-ylabel('Lat (°)'); xlabel('Long (°)'); hold off
+ylabel('Lat (Â°)'); xlabel('Long (Â°)'); hold off
 box on; axis tight
 title('Rb-map')
 
@@ -209,7 +209,7 @@ mapshow(S,'Color','k','Linewidth',2);
 mapshow(Ma,'FaceColor', [1 1 1], 'EdgeColor', [1 1 1]);
 c1 = colorbar; c1.Location='eastoutside'; 
 c1.Label.String = 'F_g x 100 (relative to silicic parent)';
-ylabel('Lat (°)'); xlabel('Long (°)'); hold off
+ylabel('Lat (Â°)'); xlabel('Long (Â°)'); hold off
 box on; axis tight
 title('Y-map')
 
@@ -338,7 +338,7 @@ Line1=' (ppm)';%(wt%) %(ppm) %-
 
 % GridFit model
 %Select directory where gridfit.m it's stored
-cd /Users/ltavazzani/polybox/f_Writing/Revisions/Round_5_coauthors_LastEdits/Codes_data/gridfitdir
+cd /Users/ltavazzani/polybox/Codes_data/gridfitdir
 %Set coordinates for interpolation limit
 minX=8.12610036379948; maxX=8.22912732362391; minY=45.5869567640003; maxY=45.6755256278475; 
 dx=0.0005; dy=0.0005;
@@ -396,7 +396,7 @@ mapshow(S,'Color','k','Linewidth',2);
 mapshow(Ma,'FaceColor', [1 1 1], 'EdgeColor', [1 1 1]);
 c1 = colorbar; c1.Location='eastoutside'; 
 c1.Label.String = 'Fraction melt extracted (0-1)';
-ylabel('Lat (°)'); xlabel('Long (°)'); hold off
+ylabel('Lat (Â°)'); xlabel('Long (Â°)'); hold off
 box on; axis tight
 title('Rb-map')
 
@@ -412,7 +412,7 @@ mapshow(S,'Color','k','Linewidth',2);
 mapshow(Ma,'FaceColor', [1 1 1], 'EdgeColor', [1 1 1]);
 c1 = colorbar; c1.Location='eastoutside'; 
 c1.Label.String = 'Fraction melt extracted (0-1)';
-ylabel('Lat (°)'); xlabel('Long (°)'); hold off
+ylabel('Lat (Â°)'); xlabel('Long (Â°)'); hold off
 box on; axis tight
 title('Y-map')
 
@@ -558,7 +558,7 @@ Line1=' (ppm)';%(wt%) %(ppm) %-
 
 % GridFit model
 %Select directory where gridfit.m it's stored
-cd /Users/ltavazzani/polybox/f_Writing/Revisions/Round_5_coauthors_LastEdits/Codes_data/gridfitdir
+cd /Users/ltavazzani/polybox/Codes_data/gridfitdir
 %Set coordinates for interpolation limit
 minX=8.12610036379948; maxX=8.22912732362391; minY=45.5869567640003; maxY=45.6755256278475; 
 dx=0.0005; dy=0.0005;
@@ -616,7 +616,7 @@ mapshow(S,'Color','k','Linewidth',2);
 mapshow(Ma,'FaceColor', [1 1 1], 'EdgeColor', [1 1 1]);
 c1 = colorbar; c1.Location='eastoutside'; 
 c1.Label.String = 'Porosity (\phi)';
-ylabel('Lat (°)'); xlabel('Long (°)'); hold off
+ylabel('Lat (Â°)'); xlabel('Long (Â°)'); hold off
 box on; axis tight
 title('Rb-map')
 
@@ -631,7 +631,7 @@ mapshow(S,'Color','k','Linewidth',2);
 mapshow(Ma,'FaceColor', [1 1 1], 'EdgeColor', [1 1 1]);
 c1 = colorbar; c1.Location='eastoutside'; 
 c1.Label.String = 'Porosity (\phi)';
-ylabel('Lat (°)'); xlabel('Long (°)'); hold off
+ylabel('Lat (Â°)'); xlabel('Long (Â°)'); hold off
 box on; axis tight
 title('Y-map')
 
@@ -714,7 +714,7 @@ hleg=legend(['R = ',num2str(r(1)*1000)],['R = ',num2str(r(2)*1000)],'Location','
 htitle = get(hleg,'Title'); set(htitle,'String','Grain size (mm)'); 
 txt1 = ['Hm = ',num2str(hm),' m']; x1= 0.532; y1= 2; 
 text(x1,y1,txt1,'Color','k','FontSize',10)
-txt2 = ['log_1_0µ = ',num2str(log10(mu)),' (Pa s)']; x2= 0.47; y2= 4; 
+txt2 = ['log_1_0Âµ = ',num2str(log10(mu)),' (Pa s)']; x2= 0.47; y2= 4; 
 text(x2,y2,txt2,'Color','k','FontSize',10)
 title('Compaction timescales')
 
@@ -749,7 +749,7 @@ txt1 = 'timescale'; x1= 0.44; y1= 0.15; text(x1,y1,txt1,'Color','k','FontSize',9
 %htitle = get(hleg,'Title'); set(htitle,'String','Grain size (mm)'); 
 txt1 = ['Hm = ',num2str(hm),' m']; x1= 0.525; y1= 0.00025; 
 text(x1,y1,txt1,'Color','k','FontSize',10)
-txt2 = ['log_1_0µ = ',num2str(log10(mu)),' (Pa s)']; x2= 0.47; y2= 0.0005; 
+txt2 = ['log_1_0Âµ = ',num2str(log10(mu)),' (Pa s)']; x2= 0.47; y2= 0.0005; 
 text(x2,y2,txt2,'Color','k','FontSize',10)
 
 %%%%%%%%%%%%%%% Hindered settling timescale (Fig.9i)
@@ -783,7 +783,7 @@ plot([0.2 0.7], [1.0 1.0],'Color',[0.5 0.5 0.5],'Linestyle',':','Linewidth',1);
 %htitle = get(hleg,'Title'); set(htitle,'String','Grain size (mm)'); 
 txt1 = ['Hm = ',num2str(hm),' m']; x1= 0.273; y1= 0.00025;
 text(x1,y1,txt1,'Color','k','FontSize',10)
-txt2 = ['log_1_0µ = ',num2str(log10(mu)),' (Pa s)']; x2= 0.22; y2= 0.0005; 
+txt2 = ['log_1_0Âµ = ',num2str(log10(mu)),' (Pa s)']; x2= 0.22; y2= 0.0005; 
 text(x2,y2,txt2,'Color','k','FontSize',10)
 
 % Histograms
